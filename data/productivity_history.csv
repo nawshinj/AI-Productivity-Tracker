@@ -1,0 +1,8 @@
+timestamp,name,productivity_score,completed_percentage,focus_level,stress_level,sleep_hours,exercise_today
+2024-01-15 09:30:00,John Doe,75,80,7,Low,7.5,True
+2024-01-14 10:00:00,Jane Smith,82,85,8,Low,7,True
+2024-01-13 14:30:00,John Doe,68,60,5,Medium,6,False
+2024-01-12 11:00:00,Jane Smith,78,75,7,Low,7.5,True
+2024-01-11 15:00:00,John Doe,72,70,6,Medium,7,True
+2024-01-10 09:30:00,Jane Smith,85,90,9,Low,8,True
+2024-01-09 13:00:00,John Doe,65,50,4,High,6,False
