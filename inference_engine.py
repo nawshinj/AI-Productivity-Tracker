@@ -458,3 +458,24 @@ class InferenceEngine:
             return '📈 Rising Star'
         else:
             return '🌱 Learning'
+    
+    def _generate_insights(self, user_data, applicable_rules):
+        """Generate actionable insights"""
+        insights = []
+        
+        if user_data.get('completed_percentage', 0) > 80:
+            insights.append('✅ Excellent task completion! Maintain this pace.')
+        
+        if user_data.get('focus_level', 5) < 4:
+            insights.append('⚠️ Low focus detected. Take a break and refresh.')
+        
+        if user_data.get('sleep_hours', 0) < 6:
+            insights.append('😴 Insufficient sleep. Prioritize rest tonight.')
+        
+        if len(applicable_rules) > 5:
+            insights.append('🎯 Multiple concerns detected. Focus on top 3 actions.')
+        
+        if user_data.get('stress_level') == 'High':
+            insights.append('💆 High stress detected. Practice relaxation techniques.')
+        
+        return insights if insights else ['✨ You\'re doing great! Keep up the good work!']
